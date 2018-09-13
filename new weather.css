@@ -1,0 +1,447 @@
+
+@font-face
+{
+	font-family:'font_mono';
+	src:url("./fonts/mono.ttf"); 
+}
+body
+
+{
+	margin:0;
+	padding:0;
+	overflow-x: hidden;
+
+}
+
+#CountryCode
+{
+	position:absolute;
+	top:366px;	
+	left:440px;
+	width:100px;
+	height:30px;
+	
+	z-index: 4;
+}
+
+#CountryCodeSelect
+{
+	position: absolute;
+	border-radius: 10px;
+	width: 100px;
+	height:30px; 
+	outline: none;
+}
+
+
+
+#result
+{
+	position:absolute;
+	height:350px;
+	width:300px;
+	right:100px;
+	top:150px;
+	border:1px solid black;
+	color: white;
+}
+
+#result p
+{
+	
+
+	width:30px;
+	height:10px;
+
+	text-align: center;
+	margin-top:50px;
+
+}
+
+
+
+
+#result_filter
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:300px;
+	height:100%; 
+ 	background-color: black;
+ 	opacity: 0.5;
+ 	z-index: -1;
+
+}
+
+
+
+#condition_image
+{
+	position: absolute;
+	margin:10px 10px 10px 10px;
+	left:80px;
+
+	width:120px;
+	height:120px; 
+}
+
+
+#Rcity
+{
+	position:absolute;
+	top:130px;
+	left:10px;
+}
+#city_name
+{
+	position: absolute;
+	top:105px;
+	left:100px;
+
+}
+
+#Rtemp
+{
+	position: absolute;
+	top:180px;
+	left:10px;
+}
+#temperature
+{
+	position: absolute;
+	top:155px;
+	left:130px;
+}
+
+#Rhumid
+{
+	position: absolute;
+	top:230px;
+	left:10px;
+}
+#humid
+{
+	position: absolute;
+	top:205px;
+	left:100px;
+}
+
+#rdes
+{
+	position: absolute;
+	top:280px;
+	left:10px;
+}
+#des
+{
+	position: absolute;
+	top:255px;
+	left:130px;
+}
+
+
+
+
+
+#back-img
+{
+	position: fixed;
+	width:100%;
+	height:100%;
+	background-repeat: no-repeat;
+	z-index:-1;
+	margin:0;
+	padding:0;
+	background-size:cover; 
+
+}
+#filter
+{
+	position:fixed;
+	width:100%;
+	height:100%; 
+	background-color:black;
+	opacity: 0.3;
+	z-index:-1;
+}
+#getinfo,#getcode
+{
+	
+	height: 30px;
+	border-radius: 10px;
+	border-style: none;
+	background-color: #435DF1;
+	color: white;
+	z-index: 1;
+
+}
+#getcode
+{
+	position:absolute;
+	top:366px;
+	left:543px;
+}
+#getinfo
+{
+	position:absolute;
+	top:201px;
+	left:543px; 
+}
+
+#searchcity h3
+{
+	color:white;
+	position:absolute;
+	top:150px;
+	left:50px;
+}
+ #searchcode h3
+ {
+ 	color:white;
+	position:absolute;
+	top:300px;
+	left:50px;
+
+ }
+
+
+#Cname
+{
+	position:absolute;
+	top:200px;
+	left:50px;
+	outline: none;
+}
+
+#zcode
+{
+	position:absolute;
+	top:365px;
+	left:50px;
+	outline: none;
+}
+
+
+
+
+#error
+{
+	height: 30px;
+	width:500px;
+	position:absolute;
+	top:450px;
+	left:50px;
+
+	z-index: 1;
+}
+ #error p
+ {
+ 	padding:0px;
+ 	margin:0px;
+ 	color: red;
+ }
+
+#option
+{
+	position: absolute;
+	top:260px;
+	left:100px;
+	color: white;
+}
+
+#myself
+{
+
+	position: absolute;
+	right:10px;
+	top:5px;
+	height:50px;
+	width:50px; 
+	border-radius: 100px;
+}
+
+#navbar
+{
+	position:fixed;
+	top:40px;
+	width:100%;
+	height:40px;
+
+	background-color:black;
+	opacity: 0.5;
+	z-index:1; 
+}
+
+#hone,#htwo
+{
+	color:white;
+	position: absolute;
+	padding: 0px;
+	margin:0px;
+}
+
+#hone
+{
+
+
+	top:0px;
+	left:70px;
+	font-family: font_mono;
+}
+
+#htwo
+{
+
+	top:30px;
+	left:40px;
+
+}
+
+#units
+{
+	position: absolute;
+	top:0px;
+	left:45%;
+	width:auto;
+	height:auto;
+	
+}
+
+#units ul
+{
+
+	list-style: none;
+}
+
+#units li
+{
+	display: inline-block;
+	margin-right:20px;
+}
+
+#celcius
+{
+border:1px solid white;
+border-bottom-width:2px;
+border-top-width: 0px;
+border-left-width: 0px;
+border-right-width: 0px;
+}
+#fahrenheit
+{
+border:1px solid white;
+border-bottom-width:0px;
+border-top-width: 0px;
+border-left-width: 0px;
+border-right-width: 0px;
+}
+
+#connect
+{
+position:fixed;
+right:10px;
+margin:0px;
+bottom:10px;
+z-index: 1;  
+}
+
+#connect li
+{
+	display: inline-block;
+	list-style: none;
+	margin-right:20px;
+}
+
+
+button
+{
+	outline: none;
+}
+a
+{
+	text-decoration:none;
+	color: white;
+}
+
+
+input
+{
+	
+	width:550px;
+	height:30px;
+	border-radius: 10px;
+	border-style: none;
+	padding-left:5px;
+	z-index: 1; 
+}
+
+h2
+{
+	position: absolute;
+	top:6px;
+	left:10px;
+	margin:0px;
+	padding:0px;
+	color:white;
+	z-index:1;
+	font-family:my_font;
+}
+hr
+{
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:60px;
+	width:100%;
+}
+
+@media only screen and (max-width:1000px)
+{
+	#result
+	{
+		left:200px;
+		top:500px;
+		margin-bottom:100px;		
+	}
+
+
+}
+
+@media only screen and (max-width:400px)
+{
+	#units{
+		top:100px;
+		left:50px;
+
+	}
+	input
+	{
+		font-size:10px;
+	}
+
+	#Cname,#zcode
+	{
+		width:200px;
+	}
+	#getinfo,#getcode
+	{
+		left:195px;
+	}
+
+	#result
+	{
+		left:30px;
+		top:460px;
+		margin-bottom:100px;	
+	}
+
+	#CountryCode
+	{
+		top:400px;
+		left:50px;
+
+	}
+
+}
+

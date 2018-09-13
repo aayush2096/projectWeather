@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Mausam-The weather map!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+<script type="text/javascript" src="./jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="./codes.json"></script>
+<link rel="stylesheet" type="text/css" href="./new weather.css">
+
+</head>
+
+<body>
+
+
+		<div id="back-img"></div>
+		<div id="filter"></div>
+		
+		<div id="searchcity">
+
+			<input type="text" placeholder="Eg:London,Delhi,Sydney etc" id="Cname">
+			<BUTTON id="getinfo">Get Info</BUTTON>
+			<h3>Get by city name-</h3>
+		</div>
+		
+		<h3 id="option"> OR</h3>
+	
+		<div id="searchcode">
+	
+			<input type="text" placeholder="Eg:560090 etc" id="zcode">
+			<BUTTON id="getcode">Get Info</BUTTON>
+			<h3>Get by city zip code & country code-</h3>
+			
+		</div>	
+
+<div id="CountryCode">
+	<select id="CountryCodeSelect"><option>Select Country</option></select>
+
+</div>
+
+		<div id="error"><p id="errormsg"></p></div>
+		<hr>
+		
+		<ul id="connect">
+			<li><a href="https://www.facebook.com/ayush.shrivastva2"><img src="./images/fb.png"></a></li>
+			<li><a href="#"><img src="./images/in.png"></a></li>
+			<li><img src="./images/mail.png"></li>
+			<li><a href="#"><img src="./images/git.png"></a></li>
+		</ul>
+
+		<h2 id="hone">Mausam</h2>
+		<h3 id="htwo">Keep an eye on weather!</h3>
+		
+
+		
+		
+		
+		<div  id="result">
+			
+			<img id="condition_image">
+
+			<div id="result_filter"></div>
+			
+			<h3 id="Rcity">City:</h3>
+			<p id="city_name"></p>
+			
+			<h3 id="Rtemp">Temperature:</h3>
+			<p id="temperature"></p>
+			
+			<h3 id="Rhumid">Humidity:</h3>
+			
+			<p id="humid"></p>
+			
+			<h3 id="rdes">Description:</h3>
+			
+			<p id="des"></p>
+
+			
+
+
+		</div>
+
+
+		<div id="units">
+			<ul>
+			<li><img src="./images/cunit.png" id="celcius"></li>
+			<li><img src="./images/funit.png" id="fahrenheit"></li>
+			</ul>
+		</div>
+
+		<img src="./images/me.jpg" id="myself">
+
+<script type="text/javascript" src="./app.js"></script>
+
+</body>
+
+</html>
