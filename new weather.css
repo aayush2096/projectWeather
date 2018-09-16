@@ -110,8 +110,8 @@ body
 #temperature
 {
 	position: absolute;
-	top:155px;
-	left:130px;
+	top:153px;
+	left:140px;
 }
 
 #Rhumid
@@ -123,8 +123,8 @@ body
 #humid
 {
 	position: absolute;
-	top:205px;
-	left:100px;
+	top:203px;
+	left:110px;
 }
 
 #rdes
@@ -136,7 +136,7 @@ body
 #des
 {
 	position: absolute;
-	top:255px;
+	top:253px;
 	left:130px;
 }
 
