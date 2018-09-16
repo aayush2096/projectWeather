@@ -85,6 +85,8 @@ result_element.hide();
 
 infobutton.addEventListener('click',function(){
 
+		document.getElementById("errormsg").innerHTML="";
+
 var city=cn.value;
 
 
@@ -113,6 +115,10 @@ cn.addEventListener('input',function() {
 	document.getElementById("errormsg").innerHTML="";
 	resetResult();
 });
+	
+cc.addEventListener('click',function(){
+	document.getElementById("errormsg").innerHTML="";
+});
 
 //______________________________________________________________________________________
 
@@ -120,6 +126,7 @@ cn.addEventListener('input',function() {
 
 //find using city zip code_____________________________________________________________
 codebutton.addEventListener('click',function (){
+	document.getElementById("errormsg").innerHTML="";
 
 var zip=zn.value;
  var czip=cc.value;
