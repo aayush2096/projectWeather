@@ -10,6 +10,31 @@
 <script type="text/javascript" src="./codes.json"></script>
 <script type="text/javascript">
   var subscribersSiteId = '22a8a4c6-1b1d-445e-9e58-1fab1ed71cf7';
+	
+	if("Notification" in window)
+	console.log("hii");
+
+
+	var notification = new Notification('Notification title', {
+      icon: 'http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png',
+      body: "Hey there! You've been notified!"
+	  });
+
+	 notification.onclick = function () {
+      window.open("http://stackoverflow.com/a/13328397/1269037");      
+    };
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </script>
 <script type="text/javascript" src="https://cdn.subscribers.com/assets/subscribers.js"></script>
 <link rel="stylesheet" type="text/css" href="./new weather.css">
