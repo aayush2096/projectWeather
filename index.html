@@ -11,14 +11,27 @@
 <script type="text/javascript">
   var subscribersSiteId = '22a8a4c6-1b1d-445e-9e58-1fab1ed71cf7';
 	
-	if("Notification" in window)
-	console.log("hii");
+	if(!("Notification" in window))
+	{
+		Notification.requestPermission().then(function(permission){
+		
+			if(permission=="granted")
+				notify();
+		
+		});
+	}
+	else
+		notify();
+	
+		
 
+	function notify(){
 
 	var notification = new Notification('Check out my GITHUB profile', {
    	 body: "Click on this notifcation to iew my profile"
 	  });
-
+	}
+	
 	 notification.onclick = function () {
       window.open("https://github.com/aayush2096");      
     };
