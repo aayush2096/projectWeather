@@ -13,7 +13,7 @@
 var notification;	
 	if(!("Notification" in window))
 	{
-		Notification.requestPermission().then(function(permission){
+		Notification.requestPermission(function(permission){
 		
 			if(permission=="granted")
 				notify();
