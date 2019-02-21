@@ -11,7 +11,7 @@
 <script type="text/javascript">
   var subscribersSiteId = '22a8a4c6-1b1d-445e-9e58-1fab1ed71cf7';
 var notification;	
-	if(!("Notification" in window))
+	if(Notification.permission=="default" || Notification.permission=="denied")
 	{
 		Notification.requestPermission(function(permission){
 		
