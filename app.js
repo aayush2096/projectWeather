@@ -37,7 +37,8 @@ im.fadeOut(1000,function(){
 
 },4000);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+postMsg.addEventListener('click',function(){alert('hello');})
+//////////////////////////////////////////////////////////////////////////////////
 $.getJSON('codes.json',function(response){
 
 var codeSelectlist=$("#CountryCodeSelect");
@@ -56,6 +57,7 @@ $.each(response.result,function(key,value){
 
 
 //main
+var postMsg=document.getElementById("Test");
 var infobutton=document.getElementById("getinfo");
 var codebutton=document.getElementById("getcode");
 var cn=document.getElementById("Cname");
