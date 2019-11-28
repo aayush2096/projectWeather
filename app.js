@@ -57,7 +57,25 @@ $.each(response.result,function(key,value){
 
 //main
 var postMsg=document.getElementById("Test");
-postMsg.addEventListener('click',function(){alert('hello');})
+postMsg.addEventListener('click',function(){
+
+ var Origin = "https://cs83-lightning-force--developer.lightning.force.com";
+	var message={
+                                CustomSettingName: "Pricing_Portal__c",
+                                Fields: {
+    							finalBorrowerRate: 2.5,
+    							finalCreditGrade: 3,
+    							finalSecurityGrade: 1,
+    							initialBorrowerRate: 0,
+    							initialCreditGrade: 4,
+    							initialSecurityGrade: 1,
+    							listingPlatform: "Platform 1 or 2",
+  								},
+  						salesforceId: "0064E00000F5lsRQAR"
+				}
+                parent.postMessage(message,Origin);
+
+})
 
 var infobutton=document.getElementById("getinfo");
 var codebutton=document.getElementById("getcode");
